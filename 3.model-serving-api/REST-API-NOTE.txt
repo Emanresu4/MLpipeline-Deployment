@@ -1,0 +1,96 @@
+Run the house price prediction API
+tox -e run
+http://localhost:8001/
+
+FastAPI demo
+Start the server
+uvicorn main:app --reload
+
+Navigate to
+localhost:8000
+localhost:8000/square?num=1
+
+openAPI spec
+localhost:8000/docs
+
+Load project api
+requirements.txt  - request hhtp client - FASTAPI
+test_requirements.txt
+app/config.py
+app/main.py
+
+test/confest.py
+test/test_api.py
+
+test
+tests/test_api.py
+tox -e test_app
+change predict
+ERROR
+
+Using Schemas in our API
+api.py -> @api_router.get("/health", response_model=schemas.Health, status_code=200)
+Go to schemas
+health.py
+tox -e run
+http://localhost:8001/
+predict.py
+Examples - try out
+Power of Pydantic + FastAPI
+
+Logging
+https://docs.python.org/3/library/logging.html
+logging level
+config.py
+python app\main.py
+main.py ->__name__ -> change from warning to debug
+python app\main.py
+Change loging level to DEBUG
+python app\main.py
+
+Heroku
+Heroku CLI
+heroku --version
+heroku create - to create a random app in heroku
+INSTALL GIT
+https://git-scm.com/download/win
+requirement files adjust
+
+Initialize GIT
+
+$ cd myapp
+$ git init
+
+$ git add .
+$ git commit -m "my first commit"
+
+Then create (initialize) heroku app with:
+$ heroku create YourAppName
+
+Lastly add git remote:
+$ heroku git:remote -a YourAppName
+
+ADD BUILD PACK
+Goto heroku dashboard (https://dashboard.heroku.com/)
+go inside app/project
+click setting
+scroll down little bit and click add build pack
+select your desired buildpack 
+
+Now you can safely deploy your app with:
+$ git push heroku master
+
+Copy paste the curl command in git bash
+
+//git subtree push --prefix 3.model-serving-api heroku main
+
+//logs
+heroku logs --tail
+
+//how-to-upload-your-python-package-to-pypi
+https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56
+https://pypi.org/project/tid-regression-model/
+
+//Procfile
+
+

@@ -1,0 +1,33 @@
+https://docs.pytest.org/en/latest/
+goto test files demo
+basic test
+_fix
+_dtype
+name of the file test matters
+conftest.py
+
+Test files of production code explain
+test features
+2.production-model-package>tox -e test_package
+break the code
+
+test prediction
+
+###################
+TOOLING
+
+test_requirements
+black - code styling enforcement tool
+flake8 - linting tool to tell us where we are not adhering to good python convensions
+mypy - Type checking tool
+isort - To check imports are in the correct order
+
+import math in training file train_pipeline.py
+tox -e lint -> demo
+
+remove line breaks
+tox -e lint -> demo
+
+mypy.ini
+
+
