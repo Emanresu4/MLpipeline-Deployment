@@ -22,9 +22,12 @@ app/main.py
 test/confest.py
 test/test_api.py
 
+>set PYTHONPATH=C:\Users\admin\deploying-machine-learning-models-master\3.model_serving_api\house_prices_api\
+
 test
 tests/test_api.py
 tox -e test_app
+pytest -vv app/tests/
 change predict
 ERROR
 
@@ -47,6 +50,8 @@ main.py ->__name__ -> change from warning to debug
 python app\main.py
 Change loging level to DEBUG
 python app\main.py
+api.py check
+setup_app_logging -> main.py call -> config.py
 
 Heroku
 Heroku CLI
@@ -54,7 +59,6 @@ heroku --version
 heroku create - to create a random app in heroku
 INSTALL GIT
 https://git-scm.com/download/win
-requirement files adjust
 
 Initialize GIT
 
